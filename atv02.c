@@ -18,11 +18,14 @@ int main()
     
     total = valor1 * valor2;
     printf("O valor da multiplicação é: %d\n", total);
-    
-    total = valor1 / valor2;
-    printf("O valor da divisão é: %d\n", total);
-    
-    total = valor1 % valor2;
-    printf("O valor do resto de divisão é: %d\n", total);
+    if(valor1 != 0 && valor2 != 0){
+        total = valor1 / valor2;
+        printf("O valor da divisão é: %d\n", total);
+        
+        total = valor1 % valor2;
+        printf("O valor do resto de divisão é: %d\n", total);
+    } else{
+        printf("Erro!!!! Divisão impossível!!!!");
+    }
+    return 0;
 }
-
